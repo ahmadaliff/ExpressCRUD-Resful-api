@@ -56,7 +56,7 @@ app.get("/all/:category", (req, res) => {
   try {
     const { category } = req.params;
     if (!listCategories.includes(category)) {
-      return handleClientError(res, 404, "URL Not Found");
+      return handleClientError(res, 404, "Category Not Found");
     }
     return res.status(200).json({ data: data[category], message: "success" });
   } catch (error) {
@@ -267,9 +267,12 @@ app.put("/update/:category/:type/:name", (req, res) => {
       return handleClientError(res, 404, "Data not found");
     }
 
-    data[category][type] = data[category][type]
-      .filter((el) => el.name.toLowerCase() !== name.toLowerCase())
-      .push(newData);
+    const filtered = data[category][type].filter(
+      (el) => el.name.toLowerCase() !== name.toLowerCase()
+    );
+    filtered.push(newData);
+    data[category][type] = filtered;
+
     fs.writeFileSync(database, JSON.stringify(data));
 
     return res.status(200).json({ data: newData, message: "Updated" });
