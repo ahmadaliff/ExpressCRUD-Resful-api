@@ -86,12 +86,11 @@ app.get("/all/:category/:type/", (req, res) => {
 app.get("/:category/:type/:name", (req, res) => {
   try {
     const { category, type, name } = req.params;
-    console.log(name);
     if (
       !listCategories.includes(category) ||
       !listTypes[category].includes(type) ||
       !data[category][type]?.find(
-        (el) => el.name.toLowerCase() !== name.toLowerCase()
+        (el) => el.name.toLowerCase() === name.toLowerCase()
       )
     ) {
       return handleClientError(res, 404, "Data Not Found");
@@ -109,7 +108,6 @@ app.get("/:category/:type/:name", (req, res) => {
 app.get("/:releaseYear", (req, res) => {
   try {
     const { releaseYear } = req.params;
-    console.log(releaseYear);
     const selectedVehicleByYear = [];
 
     listCategories.forEach((category) => {
@@ -198,7 +196,6 @@ app.post("/add-category", (req, res) => {
       message: "Created new category",
     });
   } catch (error) {
-    console.log(error);
     return handleServerError(res);
   }
 });
@@ -223,7 +220,6 @@ app.post("/add-type/:category", (req, res) => {
     }
 
     if (listTypes[category].includes(newType.name.toLowerCase())) {
-      console.log(listTypes[category]);
       return handleClientError(res, 409, "Data Already Exists");
     }
     data[category] = Object.assign(
@@ -277,7 +273,6 @@ app.put("/update/:category/:type/:name", (req, res) => {
 
     return res.status(200).json({ data: newData, message: "Updated" });
   } catch (error) {
-    console.log(error);
     return handleServerError(res);
   }
 });
@@ -304,7 +299,6 @@ app.delete("/delete/:category/:type/:name", (req, res) => {
 
     return res.status(200).json({ message: "Deleted" });
   } catch (error) {
-    console.log(error);
     return handleServerError(res);
   }
 });
