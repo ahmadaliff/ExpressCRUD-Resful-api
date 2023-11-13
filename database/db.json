@@ -1,0 +1,226 @@
+{
+  "car": {
+    "suv": [
+      {
+        "name": "Ford Explorer",
+        "description": "A mid-size SUV that has been in production since 1990.",
+        "releaseYear": 1990
+      },
+      {
+        "name": "Chevrolet Tahoe",
+        "description": "A full-size SUV that has been in production since 1995.",
+        "releaseYear": 1995
+      },
+      {
+        "name": "Toyota 4Runner",
+        "description": "A compact SUV that has been in production since 1984.",
+        "releaseYear": 1984
+      },
+      {
+        "name": "Jeep Wrangler",
+        "description": "A compact SUV that has been in production since 1986.",
+        "releaseYear": 1986
+      },
+      {
+        "name": "Nissan Pathfinder",
+        "description": "A mid-size SUV that has been in production since 1985.",
+        "releaseYear": 1985
+      }
+    ],
+    "mpv": [
+      {
+        "name": "Toyota Sienna",
+        "description": "The Toyota Sienna is a minivan manufactured by Toyota.",
+        "releaseYear": 1997
+      },
+      {
+        "name": "Honda Odyssey",
+        "description": "The Honda Odyssey is a minivan manufactured by Honda.",
+        "releaseYear": 1994
+      },
+      {
+        "name": "Chrysler Pacifica",
+        "description": "The Chrysler Pacifica is a minivan manufactured by Chrysler.",
+        "releaseYear": 2003
+      },
+      {
+        "name": "Kia Sedona",
+        "description": "The Kia Sedona is a minivan manufactured by Kia Motors.",
+        "releaseYear": 1998
+      },
+      {
+        "name": "Nissan Quest",
+        "description": "The Nissan Quest is a minivan manufactured by Nissan.",
+        "releaseYear": 1992
+      }
+    ],
+    "sport": [
+      {
+        "name": "Porsche 911 GT3",
+        "description": "The Porsche 911 GT3 is a high-performance sports car that is designed for track use.",
+        "releaseYear": 1999
+      },
+      {
+        "name": "Ferrari 488 Pista",
+        "description": "The Ferrari 488 Pista is a track-focused variant of the 488 GTB, featuring increased power, reduced weight, and improved aerodynamics.",
+        "releaseYear": 2018
+      },
+      {
+        "name": "Lamborghini Huracan Performante",
+        "description": "The Lamborghini Huracan Performante is a lightweight, high-performance sports car that is built for speed and agility on the track.",
+        "releaseYear": 2017
+      },
+      {
+        "name": "Audi R8 V10 Plus",
+        "description": "The Audi R8 V10 Plus is a powerful, mid-engine sports car that offers exceptional performance and handling.",
+        "releaseYear": 2015
+      },
+      {
+        "name": "Chevrolet Corvette Z06",
+        "description": "The Chevrolet Corvette Z06 is a supercharged sports car that delivers incredible speed and performance.",
+        "releaseYear": 2015
+      }
+    ],
+    "sedan": [
+      {
+        "name": "Honda Civic",
+        "description": "A compact car manufactured by Honda.",
+        "releaseYear": 1972
+      },
+      {
+        "name": "Toyota Corolla",
+        "description": "A line of subcompact and compact cars manufactured by Toyota.",
+        "releaseYear": 1966
+      },
+      {
+        "name": "Volkswagen Jetta",
+        "description": "A compact car manufactured by Volkswagen.",
+        "releaseYear": 1979
+      },
+      {
+        "name": "Ford Focus",
+        "description": "A compact car manufactured by Ford.",
+        "releaseYear": 1998
+      },
+      {
+        "name": "Chevrolet Cruze",
+        "description": "A compact car manufactured by Chevrolet.",
+        "releaseYear": 2008
+      }
+    ]
+  },
+
+  "motorcyle": {
+    "sport": [
+      {
+        "name": "Ducati Panigale V4 R",
+        "description": "The Ducati Panigale V4 R is a limited production racing motorcycle made by Ducati.",
+        "releaseYear": 2019
+      },
+      {
+        "name": "Kawasaki Ninja H2R",
+        "description": "The Kawasaki Ninja H2R is a closed-course motorcycle intended for non-street legal use.",
+        "releaseYear": 2015
+      },
+      {
+        "name": "Yamaha YZF-R1M",
+        "description": "The Yamaha YZF-R1M is the closest thing ever to the Yamaha Factory racing M1.",
+        "releaseYear": 2015
+      },
+      {
+        "name": "Honda CBR1000RR-R Fireblade SP",
+        "description": "The Honda CBR1000RR-R Fireblade SP is a limited edition motorcycle.",
+        "releaseYear": 2020
+      },
+      {
+        "name": "Suzuki GSX-R1000R",
+        "description": "The Suzuki GSX-R1000R is a sport bike from Suzuki's GSX-R series of motorcycles.",
+        "releaseYear": 2017
+      }
+    ],
+    "scooter": [
+      {
+        "name": "Honda Activa",
+        "description": "A popular scooter known for its fuel efficiency and reliability.",
+        "releaseYear": 2000
+      },
+      {
+        "name": "Vespa Primavera",
+        "description": "An iconic Italian scooter with a retro design.",
+        "releaseYear": 1968
+      },
+      {
+        "name": "Yamaha NMAX",
+        "description": "A sporty and agile scooter with modern features.",
+        "releaseYear": 2015
+      },
+      {
+        "name": "Suzuki Access",
+        "description": "A versatile scooter suitable for both city and long rides.",
+        "releaseYear": 2007
+      },
+      {
+        "name": "TVS Jupiter",
+        "description": "A value-for-money scooter with good performance and comfort.",
+        "releaseYear": 2013
+      }
+    ]
+  },
+
+  "aircraft": {
+    "plane": [
+      {
+        "name": "Boeing 747",
+        "description": "The Boeing 747 is a wide-body airliner and cargo aircraft, often referred to as the Jumbo Jet. It is among the world's most recognizable aircraft and was the first wide-body produced.",
+        "releaseYear": 1969
+      },
+      {
+        "name": "Airbus A380",
+        "description": "The Airbus A380 is a double-deck, wide-body airliner known for its size, capacity, and fuel efficiency. It is the largest passenger airliner in service.",
+        "releaseYear": 2007
+      },
+      {
+        "name": "Lockheed C-130 Hercules",
+        "description": "The Lockheed C-130 Hercules is a four-engine turboprop military transport aircraft. It is used for a wide range of roles, including airlift, cargo, and aerial refueling.",
+        "releaseYear": 1956
+      },
+      {
+        "name": "Boeing 787 Dreamliner",
+        "description": "The Boeing 787 Dreamliner is a long-haul, wide-body airliner known for its fuel efficiency and passenger comfort. It features a composite fuselage and advanced technology.",
+        "releaseYear": 2011
+      },
+      {
+        "name": "Cessna 172",
+        "description": "The Cessna 172 is a single-engine, high-wing aircraft primarily used for general aviation and flight training. It is one of the most popular and successful aircraft designs in history.",
+        "releaseYear": 1956
+      }
+    ],
+    "helicopter": [
+      {
+        "name": "Apache",
+        "description": "The Apache is a twin-engined army attack helicopter developed by McDonnell Douglas (now Boeing).",
+        "releaseYear": 1984
+      },
+      {
+        "name": "Black Hawk",
+        "description": "The Black Hawk is a four-bladed, twin-engine, medium-lift utility helicopter manufactured by Sikorsky Aircraft.",
+        "releaseYear": 1979
+      },
+      {
+        "name": "Chinook",
+        "description": "The Chinook is a tandem rotor helicopter designed and produced by Boeing Vertol and later by Boeing Rotorcraft Systems.",
+        "releaseYear": 1962
+      },
+      {
+        "name": "Cobra",
+        "description": "The Cobra is a two-bladed, single-engine attack helicopter manufactured by Bell Helicopter.",
+        "releaseYear": 1967
+      },
+      {
+        "name": "Huey",
+        "description": "The Huey is a utility military helicopter powered by a single turboshaft engine.",
+        "releaseYear": 1959
+      }
+    ]
+  }
+}
